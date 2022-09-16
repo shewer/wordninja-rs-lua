@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         rust: [stable]
-        lua: [lua53]
+        lua: [lua54]
         include:
         - os: ubuntu-latest
           os-prefix: linux
@@ -46,7 +46,7 @@ jobs:
       matrix:
         os: [windows-latest]
         rust: [stable]
-        lua: [lua53]
+        lua: [lua54]
     defaults:
       run:
         shell: msys2 {0}
@@ -82,7 +82,7 @@ jobs:
       matrix:
         os: [windows-latest]
         rust: [stable]
-        lua: [lua53]
+        lua: [lua54]
     defaults:
       run:
         shell: msys2 {0}
@@ -126,6 +126,6 @@ jobs:
           prerelease: ${{ startsWith(github.ref, 'refs/heads') }}
           title: ${{ startsWith(github.ref, 'refs/heads') && 'Latest' || null }}
           files: |
-            wordninja-windows-32-lua53
-            wordninja-windows-64-lua53
-            wordninja-linux-lua53
+            wordninja-windows-32-lua54
+            wordninja-windows-64-lua54
+            wordninja-linux-lua54
